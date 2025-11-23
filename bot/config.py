@@ -9,14 +9,14 @@ dirName = os.path.basename(dirPath)
 
 
 class TG_CONFIG:
-    api_id = 17108931
+    api_id =  24435985
 
-    api_hash = "436b24700208cae55ded351d8f25fd7a"
+    api_hash = "0fec896446625478537e43906a4829f8"
 
-    bot_token = "7334715842:AAGIoj20ec1xjFXBcoDTb1g50ASsfejUUNU"
+    bot_token = "7758738938:AAGwhb8vXtHw9INX8SzCr82PKYtjQJHE-3c"
 
     #DEVS or #OWNERS
-    sudo_users = [5300197778,-1002171075401,1205196878]
+    sudo_users = [6299192020,-1002171075401,1205196878]
 
     session = "Tataplay1_bot"
 
@@ -151,3 +151,4 @@ else:
 
 gauth = GoogleAuth()
 GoogleAuth.DEFAULT_SETTINGS['client_config_file'] = client_secrets_json
+
