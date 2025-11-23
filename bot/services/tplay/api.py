@@ -29,7 +29,9 @@ class TPLAY_API():
     def __init__(self, channel_slug):
         self.channel_slug = channel_slug
         # self.check_and_update_tplay_fetcher_file
-        self.channels = requests.get(self.FETCHER).json()
+        with open(self.FETCHER, "r") as f:
+            self.channels = json.load(f)
+
 
     def get_hmac_v2(self):
         response = requests.get(self.HMAC).json()['data']
@@ -59,5 +61,6 @@ class TPLAY_API():
             return data.get('id')
         except Exception:
             raise Exception("Enable to extract channelId from channelSlug")
+
 
 
